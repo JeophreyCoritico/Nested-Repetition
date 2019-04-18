@@ -1,0 +1,45 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int counter = 0;
+            int endCounter1 = 11;
+
+            int spaceEnd = 1;
+
+            while (counter < 6) //Repeats "X" 5 times in a row
+            {
+                counter++;
+
+                int counter1 = 0;
+
+
+                while (counter1 < endCounter1) //???
+                {
+                    Console.Write("X");
+
+                    counter1++;
+
+                }
+                endCounter1 = endCounter1 - 2;
+
+                Console.WriteLine();
+
+                int space = 0;
+
+                while (space < spaceEnd)
+                {
+                    Console.Write(" ");
+                    space++;
+                }
+                spaceEnd = spaceEnd + 1;
+            }
+
+            Console.ReadKey(true);
+        }
+    }
+}
